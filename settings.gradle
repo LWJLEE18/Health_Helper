@@ -1,0 +1,6 @@
+include ':sample', ':anychart'
+rootProject.name = "stepcounter"
+include ':app'
+
+
+include ':mpchartlib'

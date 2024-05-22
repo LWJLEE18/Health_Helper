@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="186dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/movement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetbutton"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/main_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/lt16400639_quantized"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="326dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2699fb"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:ignore="MissingConstraints" />
+
+    <ToggleButton
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2699fb"
+        android:text="@string/start"
+        android:textColor="@color/btn_start"
+        android:textOff="@string/start"
+        android:textOn="@string/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.309"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <ImageView
+        android:id="@+id/stepcounter2"
+        android:layout_width="266dp"
+        android:layout_height="274dp"
+        android:layout_marginBottom="508dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@raw/step"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/stepcounter"
+        android:layout_width="266dp"
+        android:layout_height="274dp"
+        android:layout_marginBottom="508dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/earth"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
+
+
+    <TextView
+        android:id="@+id/sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textColor="#FFFF"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+
+
+    <TextView
+        android:id="@+id/datatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    <ImageButton
+    android:id="@+id/movement"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_marginStart="49dp"
+    android:layout_marginLeft="49dp"
+    android:layout_marginEnd="59dp"
+    android:layout_marginRight="59dp"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/transparent"
+    android:contentDescription="@string/todo"
+    android:padding="0dp"
+    android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/BMI"
+    app:layout_constraintStart_toEndOf="@+id/Homebutton"
+    app:srcCompat="@drawable/ic_baseline_list_24"
+    tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/BMI"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/todo"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Mapbutton"
+        app:layout_constraintStart_toEndOf="@+id/movement"
+        app:srcCompat="@drawable/ic_baseline_monitor_weight_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Mapbutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/todo"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/setting"
+        app:layout_constraintStart_toEndOf="@+id/BMI"
+        app:srcCompat="@drawable/ic_baseline_map_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Mapbutton"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+    <ImageView
+        android:id="@+id/Homebutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/movement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:background="#2699fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

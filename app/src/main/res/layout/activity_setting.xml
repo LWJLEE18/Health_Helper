@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2e6ff">
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#6c83ad"
+        android:text="로그인"
+        android:textColor="@color/btn_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#6c83ad"
+        android:text="회원가입"
+        android:textColor="@color/btn_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/backGround"
+        app:srcCompat="@drawable/ic_baseline_volume_up_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="612dp"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <SeekBar
+        android:id="@+id/settingseekbar"
+        android:layout_width="363dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:max="100"
+        android:progress="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingseekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_brightness_high_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingseekbar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_brightness_low_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingseekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_brightness_medium_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

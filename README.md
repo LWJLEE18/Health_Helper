@@ -1,7 +1,7 @@
 담당 역할
 - Application UI/UX 디자인 구성
 - Application 부분적 back-end(Java) 기능 구현
-- Database 구성 및 설계
+- Database 연구 및 설계
 
 사용 언어 
 - C

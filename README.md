@@ -4,7 +4,6 @@
 - Database 연구 및 설계
 
 사용 언어 
-- C
 - Java
 - Kotlin
 - Sql
